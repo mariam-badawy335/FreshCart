@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="View product details, ratings, and stock at Navis." />
+    <meta name="theme-color" content="#010736" />
+    <title>Product | Navis</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header fixed-top">
+      <nav class="navbar navbar-expand-md py-2" aria-label="Primary">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <span class="brand-mark" aria-hidden="true"><i class="bi bi-compass"></i></span>
+            Navis
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#primaryNav"
+            aria-controls="primaryNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="primaryNav">
+            <form class="search-form d-flex mx-lg-4 my-3 my-lg-0" role="search" action="index.html" method="get">
+              <label class="visually-hidden" for="site-search">Search products</label>
+              <input
+                class="form-control"
+                id="site-search"
+                type="search"
+                name="keyword"
+                placeholder="Search for products"
+                autocomplete="off"
+              />
+              <button class="btn ms-2" type="submit" aria-label="Submit search">
+                <i class="bi bi-search" aria-hidden="true"></i>
+              </button>
+            </form>
+            <div class="d-flex align-items-center ms-md-auto gap-1">
+              <a class="icon-link" href="#wishlist" aria-label="Wishlist">
+                <i class="bi bi-heart" aria-hidden="true"></i>
+              </a>
+              <a class="icon-link" href="#account" aria-label="Account">
+                <i class="bi bi-person" aria-hidden="true"></i>
+              </a>
+              <a class="icon-link" href="cart.html" aria-label="Shopping cart">
+                <i class="bi bi-bag" aria-hidden="true"></i>
+                <span class="cart-count" hidden>0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="category-nav" aria-label="Product categories">
+        <div class="container">
+          <ul class="nav justify-content-center flex-wrap">
+            <li class="nav-item"><a class="nav-link" href="index.html#products">Featured</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#categories">Fashion</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#categories">Electronics</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#categories">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#categories">Beauty</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#categories">Sports</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#categories">Kids</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#categories">Grocery</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="pdp">
+      <div class="container">
+        <div id="product-detail">
+          <p class="pdp-status" role="status">Loading product…</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer" id="support">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <p class="footer-brand">Navis</p>
+            <h2>About us</h2>
+            <p>
+              Navis is an independent shop built around honest prices, careful curation, and
+              support that answers when you need it. We ship nationwide and stand behind every order.
+            </p>
+            <h3>Contact</h3>
+            <ul class="footer-contact">
+              <li><a href="mailto:hello@navis.shop">hello@navis.shop</a></li>
+              <li><a href="tel:+12025550147">+1 (202) 555-0147</a></li>
+              <li>118 Harbor Lane, Suite 4, Boston, MA 02110</li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h3>Shop</h3>
+            <ul class="footer-links">
+              <li><a href="index.html#products">Featured</a></li>
+              <li><a href="index.html#categories">Fashion</a></li>
+              <li><a href="index.html#categories">Electronics</a></li>
+              <li><a href="index.html#categories">Home</a></li>
+              <li><a href="index.html#categories">Grocery</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2" id="account">
+            <h3>Account</h3>
+            <ul class="footer-links">
+              <li><a href="#account">Sign in</a></li>
+              <li><a href="#account">Orders</a></li>
+              <li><a href="#wishlist" id="wishlist">Wishlist</a></li>
+              <li><a href="cart.html" id="cart">Cart</a></li>
+              <li><a href="#account">Addresses</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h3>Support</h3>
+            <ul class="footer-links">
+              <li><a href="#support">Help center</a></li>
+              <li><a href="#support">Shipping</a></li>
+              <li><a href="#support">Refunds</a></li>
+              <li><a href="#support">Track order</a></li>
+              <li><a href="#support">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h3>Legal</h3>
+            <ul class="footer-links">
+              <li><a href="#support">Privacy policy</a></li>
+              <li><a href="#support">Terms of use</a></li>
+              <li><a href="#support">Cookie policy</a></li>
+              <li><a href="#support">Accessibility</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+          <p class="mb-0">&copy; 2026 Navis. All rights reserved.</p>
+          <p class="mb-0">Free shipping on orders over 50 EGP.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
